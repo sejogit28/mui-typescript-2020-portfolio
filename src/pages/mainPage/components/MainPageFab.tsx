@@ -1,0 +1,60 @@
+import React from 'react'
+
+import { SpeedDial, SpeedDialAction } from '@mui/material';
+import { SxProps } from '@mui/system';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+
+interface Props {
+    
+}
+
+const MainPageFab = (props: Props) => 
+{
+
+    const downloadResume = () => {
+        window.location.href = "/Resume/SeanJoseph2022Resume.docx"
+    }
+
+    const SpeedDialStyle: SxProps = 
+    {
+        position: 'fixed',
+        bottom: 16,
+        right: 16
+    };
+
+    return (
+                    <SpeedDial
+                ariaLabel="Contact links speed dial"
+                sx={SpeedDialStyle}
+                direction='up'
+                icon={<SettingsIcon />}
+            >
+                <SpeedDialAction
+                    key={'My LinkedIn Profile'}
+                    icon={<LinkedInIcon />}
+                    tooltipTitle={'My LinkedIn Profile'}
+                    onClick={() => { window.location.href = "https://www.linkedin.com/in/sean-joseph-41ab49114/"} } 
+                />
+
+                <SpeedDialAction
+                    key={'My GitHub Profile'}
+                    icon={<GitHubIcon />}
+                    tooltipTitle={'My GitHub Profile'}
+                    onClick={() => { window.location.href = "https://github.com/sejogit28"} } 
+                />
+                <SpeedDialAction
+                    key={'Download Updated Resume'}
+                    icon={<CloudDownloadIcon />}
+                    tooltipTitle={'Download Updated My Resume'}
+                    onClick={() => { downloadResume() }}
+
+                />
+            </SpeedDial>
+
+    )
+}
+
+export default MainPageFab
