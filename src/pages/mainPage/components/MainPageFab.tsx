@@ -1,17 +1,17 @@
 import React from 'react'
 
-import { SpeedDial, SpeedDialAction } from '@mui/material';
+import { SpeedDial, SpeedDialAction, Zoom } from '@mui/material';
 import { SxProps } from '@mui/system';
-import SettingsIcon from '@mui/icons-material/Settings';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
-interface Props {
-    
+interface MainPageFabProps {
+    showFab: boolean;
 }
 
-const MainPageFab = (props: Props) => 
+const MainPageFab = (props: MainPageFabProps) => 
 {
 
     const downloadResume = () => {
@@ -26,11 +26,12 @@ const MainPageFab = (props: Props) =>
     };
 
     return (
-                    <SpeedDial
+        <Zoom in={props.showFab}>
+            <SpeedDial
                 ariaLabel="Contact links speed dial"
                 sx={SpeedDialStyle}
                 direction='up'
-                icon={<SettingsIcon />}
+                icon={<ConnectWithoutContactIcon />}
             >
                 <SpeedDialAction
                     key={'My LinkedIn Profile'}
@@ -48,11 +49,12 @@ const MainPageFab = (props: Props) =>
                 <SpeedDialAction
                     key={'Download Updated Resume'}
                     icon={<CloudDownloadIcon />}
-                    tooltipTitle={'Download Updated My Resume'}
+                    tooltipTitle={'Download  My Updated Resume'}
                     onClick={() => { downloadResume() }}
 
                 />
             </SpeedDial>
+        </Zoom>
 
     )
 }

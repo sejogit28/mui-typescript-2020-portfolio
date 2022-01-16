@@ -63,7 +63,7 @@ const PortfolioLayout = (props: LayoutProps) =>
     <ThemeProvider theme={muiTheme}>
         <ParticleBackground />
         <MuiAppBar navigationDrawerOpen={navigationDrawerOpen} setNavigationDrawerOpen={setNavigationDrawerOpen} toggleDarkMode={toggleDarkMode}>
-            <Container>
+            <Container sx={{ p: 2}}>
                               
             </ Container>
         </MuiAppBar>

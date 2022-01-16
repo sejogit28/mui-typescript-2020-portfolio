@@ -1,8 +1,7 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement } from 'react'
 import {AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Slide, IconButton} from '@mui/material';
 
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
-import Brightness6Icon from '@mui/icons-material/Brightness6';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 import PortfolioNavigationDrawer from './PortfolioNavDrawer';
@@ -44,9 +43,9 @@ function MuiAppBar(appBarProps: AppBarProps): ReactElement
               <IconButton onClick={() =>{ setNavigationDrawerOpen(true);}}>
                 <MenuOpenIcon/>
               </IconButton>
-              <IconButton onClick={() =>{ toggleDarkMode();}}>
-                <Brightness6Icon/>
-              </IconButton>
+           {/*<IconButton onClick={() =>{ toggleDarkMode();}}>
+                 <Brightness6Icon/>
+              </IconButton> */}
             </Toolbar>
           </AppBar>
         </HideOnScroll>
