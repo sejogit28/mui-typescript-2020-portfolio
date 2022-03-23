@@ -5,6 +5,7 @@ import SkillsSection from "./sections/skillsSection/SkillsSection";
 
 import MainPageFab from "./components/MainPageFab";
 import { Container } from "@mui/material";
+import ContactFormSection from "./sections/contactFormSection/ContactFormSection";
 
 const PortfolioPage = () => {
   const [showFab, setShowFab] = useState(false);
@@ -25,6 +26,7 @@ const PortfolioPage = () => {
       <IntroSection />
       <ProjectSection />
       <SkillsSection />
+      <ContactFormSection />
       <MainPageFab showFab={showFab} />
     </Container>
   );

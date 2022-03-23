@@ -50,16 +50,6 @@ function MuiAppBar(appBarProps: AppBarProps): ReactElement {
             >
               SejoTech
             </Typography>
-            <IconButton
-              onClick={() => {
-                setNavigationDrawerOpen(true);
-              }}
-            >
-              <MenuOpenIcon />
-            </IconButton>
-            {/*<IconButton onClick={() =>{ toggleDarkMode();}}>
-                 <Brightness6Icon/>
-              </IconButton> */}
           </Toolbar>
         </AppBar>
       </HideOnScroll>
