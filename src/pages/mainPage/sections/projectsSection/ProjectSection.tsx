@@ -32,14 +32,14 @@ const ProjectSection = (props: ProjectSectionProps) => {
             {
                 return (
 
-                    <Grid item xs={9} md={9} alignSelf='center' sx={{ marginBottom: '6rem' }}>
+                    <Grid item xs={10} md={10} alignSelf='center' sx={{ marginBottom: '6rem' }}>
                         <Card key={projCard.id} >               
                             <CardMedia
                                 component="img"
                                 src={projCard.imageSrc}
                                 height="75%"                            
                                 title={projCard.title}
-                                sx={{ maxWidth: '40rem' }}
+                                sx={{ maxWidth: '45rem' }}
                             />
                             <CardContent>
                                 <Typography variant="body2" color="textSecondary" component="p">

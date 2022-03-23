@@ -1,7 +1,7 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import PortfolioLayout from '../../layout/PortfolioLayout';
-import PortfolioPage from '../../pages/mainPage/PortfolioPage';
+import PortfolioLayout from "../../layout/PortfolioLayout";
+import PortfolioPage from "../../pages/mainPage/PortfolioPage";
 
 // Finish animations
 // Make 4th section for contact form
@@ -11,14 +11,13 @@ import PortfolioPage from '../../pages/mainPage/PortfolioPage';
 
 function App() {
   return (
-        <Router>
-          <Routes>
-            <Route element={<PortfolioLayout />}>
-              <Route path='/' element={<PortfolioPage />} />
-              
-            </Route>
-          </ Routes>
-        </Router>
+    <Router>
+      <Routes>
+        <Route element={<PortfolioLayout />}>
+          <Route path="/" element={<PortfolioPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
