@@ -17,7 +17,7 @@ const PortfolioLayout = () => {
 
   const muiTheme = createTheme({
     palette: {
-      mode: darkMode ? "dark" : "light",
+      mode: "dark",
       primary: {
         main: "#003BA3",
       },
