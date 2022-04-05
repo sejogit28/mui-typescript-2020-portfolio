@@ -31,7 +31,7 @@ const projectCardListData = [
     imageSrc: "/Photos/MernBlogGif.gif",
     description:
       "A personal blog application built using the MERN(MongoDb, Express, React and Node).",
-    liveLink: "https://fervent-darwin-5bcd5e.netlify.app/",
+    liveLink: "https://tender-bohr-ca754b.netlify.app",
     gitHubLink: "https://github.com/sejogit28/MERN-Blog",
   },
 ];

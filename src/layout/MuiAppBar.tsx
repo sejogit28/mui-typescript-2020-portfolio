@@ -6,11 +6,9 @@ import {
   CssBaseline,
   useScrollTrigger,
   Slide,
-  IconButton,
 } from "@mui/material";
 
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 import PortfolioNavigationDrawer from "./PortfolioNavDrawer";
 
@@ -32,8 +30,7 @@ function HideOnScroll(appBarProps: AppBarProps) {
 }
 
 function MuiAppBar(appBarProps: AppBarProps): ReactElement {
-  const { toggleDarkMode, navigationDrawerOpen, setNavigationDrawerOpen } =
-    appBarProps;
+  const { navigationDrawerOpen, setNavigationDrawerOpen } = appBarProps;
 
   return (
     <React.Fragment>
