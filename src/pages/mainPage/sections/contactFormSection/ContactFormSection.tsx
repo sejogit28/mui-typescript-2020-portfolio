@@ -58,7 +58,7 @@ const ContactFormSection = () => {
               />
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} marginTop="1rem">
               <Button
                 variant="contained"
                 type="submit"
