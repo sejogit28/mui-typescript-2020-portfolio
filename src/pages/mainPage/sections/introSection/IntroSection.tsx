@@ -50,20 +50,20 @@ const IntroSection = (props: IntroSectionProps) => {
     };
   }, []);
 
+  const handleIntroSectionVisibility = (showSection: boolean) => {
+    setShowCard(showSection);
+    setShowTitle(showSection);
+    setShowLinkedInButton(showSection);
+    setShowGitHubButton(showSection);
+    setShowResumeButton(showSection);
+  };
+
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 350) {
-      setShowCard(false);
-      setShowTitle(false);
-      setShowLinkedInButton(false);
-      setShowGitHubButton(false);
-      setShowResumeButton(false);
+      handleIntroSectionVisibility(false);
     } else if (scrolled <= 350) {
-      setShowCard(true);
-      setShowTitle(true);
-      setShowLinkedInButton(true);
-      setShowGitHubButton(true);
-      setShowResumeButton(true);
+      handleIntroSectionVisibility(true);
     }
   };
 
@@ -76,6 +76,7 @@ const IntroSection = (props: IntroSectionProps) => {
       justifyContent={"center"}
       alignItems={"center"}
       spacing={3}
+      style={{ marginTop: "3rem" }}
     >
       <Grid item xs={12} md={5} alignSelf="center">
         <Fade in={showTitle} timeout={4000}>

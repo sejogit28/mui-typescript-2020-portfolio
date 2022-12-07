@@ -12,8 +12,9 @@ const projectCardListData: projCardProps[] = [
     title: "Expense Track",
     imageSrc: "/Photos/ExpenseTrackerGif.gif",
     description:
-      "An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres. Deployed on Netlify and Heroku(recently migrated from Microsoft SQL Server/Azure)",
-    liveLink: "https://loving-turing-d3cc22.netlify.app",
+      //"An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres. Deployed on Netlify and Heroku(recently migrated from Microsoft SQL Server/Azure)",
+      "An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres.",
+    liveLink: "",
     gitHubLink: "https://github.com/sejogit28/ExpenseTrackerSol",
   },
   {
@@ -21,8 +22,8 @@ const projectCardListData: projCardProps[] = [
     title: "Coding Mind",
     imageSrc: "/Photos/MernBlogGif.gif",
     description:
-      "A personal blog application built using the MERN(MongoDb, Express, React and Node). Delployed on Netlify and Heroku",
-    liveLink: "https://tender-bohr-ca754b.netlify.app",
+      "A personal blog application built using the MERN(MongoDb, Express, React and Node).",
+    liveLink: "",
     gitHubLink: "https://github.com/sejogit28/MERN-Blog",
   },
   {
@@ -30,8 +31,9 @@ const projectCardListData: projCardProps[] = [
     title: "Bug Track",
     imageSrc: "/Photos/NewBugTrackerGif.gif",
     description:
-      "A bug tracker built using .NET 5(MVC), Entity Framework, Bootstrap and Postgres. Deployed on Heroku(recently migrated from Microsoft SQL Server/Azure)",
-    liveLink: "https://the-bug-track-dev.herokuapp.com/",
+      //"A bug tracker built using .NET 5(MVC), Entity Framework, Bootstrap and Postgres. Deployed on Heroku(recently migrated from Microsoft SQL Server/Azure)",
+      "A bug tracker built using .NET 5(MVC), Entity Framework, Bootstrap and Postgres.",
+    liveLink: "",
     gitHubLink: "https://github.com/sejogit28/BugTrackerTime2Sol",
   },
 ];

@@ -67,7 +67,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
                 ) : (
                   <Tooltip
                     arrow
-                    title="Live link coming soon"
+                    title="Live link being moved due to recent changes at Heroku"
                     TransitionComponent={Zoom}
                   >
                     <IconButton href="#" aria-label="share">
