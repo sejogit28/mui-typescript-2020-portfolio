@@ -14,7 +14,7 @@ const ContactFormSection = () => {
         Contact Me:
       </Typography>
       <Grid container alignItems="center" justifyContent="space-evenly" xs={12}>
-        <Paper elevation={3} sx={{ minWidth: "27rem" }}>
+        <Paper elevation={3} sx={{ minWidth: "90%", padding: "2rem" }}>
           <form
             action="https://formsubmit.co/6c3b1eb7d56edb5c1551bc6d6e45f59a"
             method="POST"
