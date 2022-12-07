@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 
 const StyledGrid = styled(Grid)(() => ({
   minWidth: "100%",
+  maxWidth: "100%",
   marginBottom: "10rem",
 }));
 
