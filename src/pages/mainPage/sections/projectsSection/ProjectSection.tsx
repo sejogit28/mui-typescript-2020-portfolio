@@ -34,13 +34,14 @@ const ProjectSection = (props: ProjectSectionProps) => {
       {projectCardData.map((projCard: projCardProps) => {
         return (
           <Grid
+            key={projCard.id}
             item
             xs={10}
             md={10}
             alignSelf="center"
             sx={{ marginBottom: "6rem" }}
           >
-            <Card key={projCard.id} sx={{ maxWidth: "50rem" }}>
+            <Card key={projCard.id} sx={{ maxWidth: "60rem" }}>
               <CardMedia
                 component="img"
                 src={projCard.imageSrc}
@@ -54,27 +55,19 @@ const ProjectSection = (props: ProjectSectionProps) => {
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
-                {projCard.liveLink ? (
-                  <Tooltip
-                    arrow
-                    title={projCard.title}
-                    TransitionComponent={Zoom}
-                  >
-                    <IconButton href={projCard.liveLink} aria-label="share">
-                      <LinkIcon fontSize="large" />
-                    </IconButton>
-                  </Tooltip>
-                ) : (
-                  <Tooltip
-                    arrow
-                    title="Live link being moved due to recent changes at Heroku"
-                    TransitionComponent={Zoom}
-                  >
-                    <IconButton href="#" aria-label="share">
-                      <LinkIcon fontSize="large" />
-                    </IconButton>
-                  </Tooltip>
-                )}
+                <Tooltip
+                  arrow
+                  title={
+                    projCard.liveLink
+                      ? projCard.title
+                      : "Live link being moved due to recent changes at Heroku"
+                  }
+                  TransitionComponent={Zoom}
+                >
+                  <IconButton href={projCard.liveLink} aria-label="share">
+                    <LinkIcon fontSize="large" />
+                  </IconButton>
+                </Tooltip>
                 <Tooltip
                   arrow
                   title="Project GitHub"

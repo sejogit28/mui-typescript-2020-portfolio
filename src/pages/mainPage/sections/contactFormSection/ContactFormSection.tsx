@@ -13,13 +13,19 @@ const ContactFormSection = () => {
       <Typography align="center" variant="h2" sx={{ marginBottom: "0" }}>
         Contact Me:
       </Typography>
-      <Grid container alignItems="center" justifyContent="space-evenly" xs={12}>
+      <Grid
+        container
+        alignItems="center"
+        justifyContent="space-evenly"
+        item
+        xs={12}
+      >
         <Paper elevation={3} sx={{ minWidth: "90%", padding: "2rem" }}>
           <form
             action="https://formsubmit.co/6c3b1eb7d56edb5c1551bc6d6e45f59a"
             method="POST"
           >
-            <Grid xs={12}>
+            <Grid item xs={12}>
               <TextField
                 required
                 type="text"

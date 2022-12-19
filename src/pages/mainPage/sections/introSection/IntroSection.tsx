@@ -68,6 +68,7 @@ const IntroSection = (props: IntroSectionProps) => {
   };
 
   window.addEventListener("scroll", toggleVisible);
+  const titleSize = "h1";
 
   return (
     <StyledGrid
@@ -75,32 +76,31 @@ const IntroSection = (props: IntroSectionProps) => {
       direction={"row"}
       justifyContent={"center"}
       alignItems={"center"}
-      spacing={3}
-      style={{ marginTop: "3rem" }}
+      spacing={0}
     >
-      <Grid item xs={12} md={5} alignSelf="center">
+      <Grid item xs={12} md={5} alignSelf="center" sx={{ marginRight: "5rem" }}>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant="h3" align="center">
+          <Typography variant={titleSize} align="center">
             Professional
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant="h3" align="center">
+          <Typography variant={titleSize} align="center">
             .NET
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant="h3" align="center">
+          <Typography variant={titleSize} align="center">
             {`&`}
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant="h3" align="center">
+          <Typography variant={titleSize} align="center">
             React
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant="h3" align="center">
+          <Typography variant={titleSize} align="center">
             Developer
           </Typography>
         </Fade>

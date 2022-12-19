@@ -22,7 +22,7 @@ const SkillsSection = (props: SkillsSectionProps) => {
 
       {imageCardData.map((imageCard: ImageCardDataProps) => {
         return (
-          <Grid item xs={4} sm={3} md={2} alignSelf="center">
+          <Grid item xs={4} sm={3} md={2} alignSelf="center" key={imageCard.id}>
             <Card>
               <CardMedia
                 component="img"
