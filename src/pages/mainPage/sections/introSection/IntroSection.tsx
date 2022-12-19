@@ -68,7 +68,7 @@ const IntroSection = (props: IntroSectionProps) => {
   };
 
   window.addEventListener("scroll", toggleVisible);
-  const titleSize = "h1";
+  const titleSize = "4.6rem";
 
   return (
     <StyledGrid
@@ -80,27 +80,27 @@ const IntroSection = (props: IntroSectionProps) => {
     >
       <Grid item xs={12} md={5} alignSelf="center" sx={{ marginRight: "5rem" }}>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant={titleSize} align="center">
+          <Typography sx={{ fontSize: titleSize }} align="center">
             Professional
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant={titleSize} align="center">
+          <Typography sx={{ fontSize: titleSize }} align="center">
             .NET
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant={titleSize} align="center">
+          <Typography sx={{ fontSize: titleSize }} align="center">
             {`&`}
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant={titleSize} align="center">
+          <Typography sx={{ fontSize: titleSize }} align="center">
             React
           </Typography>
         </Fade>
         <Fade in={showTitle} timeout={4000}>
-          <Typography variant={titleSize} align="center">
+          <Typography sx={{ fontSize: titleSize }} align="center">
             Developer
           </Typography>
         </Fade>
