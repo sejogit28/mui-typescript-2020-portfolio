@@ -105,9 +105,9 @@ const IntroSection = (props: IntroSectionProps) => {
           </Typography>
         </Fade>
       </Grid>
-      <Grid item xs={6} md={4} alignSelf="center">
+      <Grid item xs={12} md={4} alignSelf="center">
         <Fade in={showCard} timeout={4000}>
-          <Card sx={{ minWidth: "9rem" }}>
+          <Card sx={{ minWidth: "1em" }}>
             <CardActionArea>
               <CardMedia
                 component="img"
