@@ -68,7 +68,7 @@ const IntroSection = (props: IntroSectionProps) => {
   };
 
   window.addEventListener("scroll", toggleVisible);
-  const titleSize = "4rem";
+  const titleSize = "3rem";
 
   return (
     <StyledGrid
@@ -78,7 +78,7 @@ const IntroSection = (props: IntroSectionProps) => {
       alignItems={"center"}
       spacing={0}
     >
-      <Grid item xs={12} md={5} alignSelf="center" sx={{ marginRight: "5rem" }}>
+      <Grid item xs={12} md={5} alignSelf="center">
         <Fade in={showTitle} timeout={4000}>
           <Typography sx={{ fontSize: titleSize }} align="center">
             Professional
