@@ -68,7 +68,7 @@ const IntroSection = (props: IntroSectionProps) => {
   };
 
   window.addEventListener("scroll", toggleVisible);
-  const titleSize = "4.6rem";
+  const titleSize = "4rem";
 
   return (
     <StyledGrid
