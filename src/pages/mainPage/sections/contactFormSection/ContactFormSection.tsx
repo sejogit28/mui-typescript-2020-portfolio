@@ -11,7 +11,7 @@ const ContactFormSection = () => {
       sx={{ minHeight: "35rem" }}
     >
       <Typography align="center" variant="h2" sx={{ marginBottom: "0" }}>
-        Contact Me:
+        Contact Me
       </Typography>
       <Grid
         container

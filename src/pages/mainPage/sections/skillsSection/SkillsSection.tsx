@@ -16,7 +16,7 @@ const SkillsSection = (props: SkillsSectionProps) => {
     >
       <Grid item xs={12}>
         <Typography variant="h3" align="center">
-          My Skills
+          Skills
         </Typography>
       </Grid>
 
