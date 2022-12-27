@@ -14,7 +14,7 @@ const projectCardListData: projCardProps[] = [
     description:
       //"An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres. Deployed on Netlify and Heroku(recently migrated from Microsoft SQL Server/Azure)",
       "An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres.",
-    liveLink: "",
+    liveLink: "https://loving-turing-d3cc22.netlify.app",
     gitHubLink: "https://github.com/sejogit28/ExpenseTrackerSol",
   },
   {
