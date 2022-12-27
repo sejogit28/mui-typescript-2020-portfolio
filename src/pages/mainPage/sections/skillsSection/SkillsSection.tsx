@@ -24,8 +24,8 @@ const SkillsSection = (props: SkillsSectionProps) => {
         return (
           <Grid
             item
-            xs={4}
-            sm={3}
+            xs={6}
+            sm={4}
             md={2}
             alignSelf="center"
             key={imageCard.id}
