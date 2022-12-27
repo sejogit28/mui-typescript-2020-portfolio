@@ -28,7 +28,7 @@ const projectCardListData: projCardProps[] = [
   },
   {
     id: 3,
-    title: "Bug Track",
+    title: "The Bug Track",
     imageSrc: "/Photos/NewBugTrackerGif.gif",
     description:
       "A bug tracker built using .NET 5(MVC), Entity Framework, Bootstrap and Postgres. Deployed on Heroku(recently migrated from Microsoft SQL Server/Azure)",

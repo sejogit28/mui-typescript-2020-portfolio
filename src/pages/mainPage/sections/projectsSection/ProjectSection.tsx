@@ -41,7 +41,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
             alignSelf="center"
             sx={{ marginBottom: "6rem" }}
           >
-            <Card key={projCard.id} sx={{ maxWidth: "60rem" }}>
+            <Card key={projCard.id} sx={{ maxWidth: "50rem" }}>
               <CardMedia
                 component="img"
                 src={projCard.imageSrc}
