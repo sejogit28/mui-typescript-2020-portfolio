@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import StyledGrid from "../../components/StyledGrid";
-import imageCardData, { ImageCardDataProps } from "./imageCardData";
+import imageCardData, { ImageCardDataProps } from "./skillsCardData";
 
 interface SkillsSectionProps {}
 
@@ -22,7 +22,15 @@ const SkillsSection = (props: SkillsSectionProps) => {
 
       {imageCardData.map((imageCard: ImageCardDataProps) => {
         return (
-          <Grid item xs={4} sm={3} md={2} alignSelf="center" key={imageCard.id}>
+          <Grid
+            item
+            xs={4}
+            sm={3}
+            md={2}
+            alignSelf="center"
+            key={imageCard.id}
+            wrap="nowrap"
+          >
             <Card>
               <CardMedia
                 component="img"

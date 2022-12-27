@@ -78,7 +78,7 @@ const IntroSection = (props: IntroSectionProps) => {
       alignItems={"center"}
       spacing={0}
     >
-      <Grid item xs={12} md={5} alignSelf="center">
+      <Grid item xs={0} md={5} alignSelf="center">
         <Fade in={showTitle} timeout={4000}>
           <Typography sx={{ fontSize: titleSize }} align="center">
             Professional
