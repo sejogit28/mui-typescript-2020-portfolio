@@ -27,7 +27,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
     >
       <Grid item xs={12}>
         <Typography variant="h3" align="center" gutterBottom>
-          Projects I've Built
+          Deployed Projects
         </Typography>
       </Grid>
 

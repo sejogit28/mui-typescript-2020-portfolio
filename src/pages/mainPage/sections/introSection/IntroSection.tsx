@@ -161,8 +161,8 @@ const IntroSection = (props: IntroSectionProps) => {
                 >
                   <IconButton
                     aria-label="share"
-                    href="/Resume/SeanJosephFullStackDeveloper2021Resume.docx"
-                    download="SeanJosephResume2021"
+                    href="/Resume/SeanJosephResume2023Resume.docx"
+                    download="SeanJosephResume2023"
                   >
                     <CloudDownloadIcon fontSize="large" />
                   </IconButton>
