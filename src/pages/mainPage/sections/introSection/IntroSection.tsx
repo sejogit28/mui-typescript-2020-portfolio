@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Card,
   Grid,
@@ -20,14 +20,22 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
 import StyledGrid from "../../components/StyledGrid";
 
-interface IntroSectionProps {}
-
-const IntroSection = (props: IntroSectionProps) => {
+const IntroSection = () => {
   const [showCard, setShowCard] = useState(false);
   const [showLinkedinButton, setShowLinkedInButton] = useState(false);
   const [showGitHubButton, setShowGitHubButton] = useState(false);
   const [showResumeButton, setShowResumeButton] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 350) {
+      handleIntroSectionVisibility(false);
+    } else if (scrolled <= 350) {
+      handleIntroSectionVisibility(true);
+    }
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setShowCard(true);
@@ -56,15 +64,6 @@ const IntroSection = (props: IntroSectionProps) => {
     setShowLinkedInButton(showSection);
     setShowGitHubButton(showSection);
     setShowResumeButton(showSection);
-  };
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 350) {
-      handleIntroSectionVisibility(false);
-    } else if (scrolled <= 350) {
-      handleIntroSectionVisibility(true);
-    }
   };
 
   window.addEventListener("scroll", toggleVisible);
@@ -122,7 +121,6 @@ const IntroSection = (props: IntroSectionProps) => {
                 height="75%"
                 title="Sean Joseph Head Shot"
               />
-
               <CardContent>
                 <Typography variant="h6" align="center">
                   Sean Joseph
