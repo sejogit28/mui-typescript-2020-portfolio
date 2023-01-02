@@ -22,7 +22,7 @@ const projectCardListData: projCardProps[] = [
     imageSrc: "/Photos/MernBlogGif.gif",
     description:
       "A personal blog application built using the MERN(MongoDb, Express, React and Node).",
-    liveLink: "",
+    liveLink: "https://tender-bohr-ca754b.netlify.app/",
     gitHubLink: "https://github.com/sejogit28/MERN-Blog",
   },
   {
