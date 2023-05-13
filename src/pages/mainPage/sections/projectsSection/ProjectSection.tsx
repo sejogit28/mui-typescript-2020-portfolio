@@ -60,11 +60,11 @@ const ProjectSection = (props: ProjectSectionProps) => {
                   title={
                     projCard.liveLink
                       ? projCard.title
-                      : "Live link being moved due to recent changes at Heroku"
+                      : "Website currently under construction"
                   }
                   TransitionComponent={Zoom}
                 >
-                  <IconButton href={projCard.liveLink} aria-label="share">
+                  <IconButton href={projCard.liveLink ?? ""} aria-label="share">
                     <LinkIcon fontSize="large" />
                   </IconButton>
                 </Tooltip>

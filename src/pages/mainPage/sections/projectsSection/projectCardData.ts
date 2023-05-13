@@ -3,7 +3,7 @@ export interface projCardProps {
   title: string;
   imageSrc: string;
   description: string;
-  liveLink: string;
+  liveLink: string | null;
   gitHubLink: string;
 }
 const projectCardListData: projCardProps[] = [
@@ -13,7 +13,7 @@ const projectCardListData: projCardProps[] = [
     imageSrc: "/Photos/ExpenseTrackerGif.gif",
     description:
       "An expense tracker built with Blazor Web Assembly, .NET 5 Web Api, and Postgres. Deployed on Netlify and Heroku(migrated from Microsoft SQL Server/Azure)",
-    liveLink: "https://loving-turing-d3cc22.netlify.app",
+    liveLink: null,
     gitHubLink: "https://github.com/sejogit28/ExpenseTrackerSol",
   },
   {
@@ -22,7 +22,7 @@ const projectCardListData: projCardProps[] = [
     imageSrc: "/Photos/MernBlogGif.gif",
     description:
       "A personal blog application built using the MERN(MongoDb, Express, React and Node).",
-    liveLink: "https://tender-bohr-ca754b.netlify.app/",
+    liveLink: null,
     gitHubLink: "https://github.com/sejogit28/MERN-Blog",
   },
   {
@@ -31,7 +31,7 @@ const projectCardListData: projCardProps[] = [
     imageSrc: "/Photos/NewBugTrackerGif.gif",
     description:
       "A bug tracker built using .NET 5(MVC), Entity Framework, Bootstrap and Postgres. Deployed on Heroku(migrated from Microsoft SQL Server/Azure)",
-    liveLink: "http://the-bug-track.herokuapp.com",
+    liveLink: null,
     gitHubLink: "https://github.com/sejogit28/BugTrackerTime2Sol",
   },
 ];
